@@ -1,0 +1,31 @@
+export const CONTACT_US_CONSTANTS = {
+  HERO: {
+    TITLE: "Contact Us",
+    DESCRIPTION: "Get in touch with us to learn more about our services",
+  },
+  CONTACT_INFO: {
+    BADGE: "Contact Information",
+    TITLE: "Ways to Reach Us",
+    DESCRIPTION: "Choose the most convenient way to get in touch with our team",
+  },
+  CONTACT_FORM: {
+    BADGE: "Contact Form",
+    TITLE: "Send Us a Message",
+    DESCRIPTION: "Fill out the form below and we'll get back to you as soon as possible.",
+    BUTTON_TEXT: "Send Message",
+    BUTTON_LOADING_TEXT: "Sending...",
+    SUBMIT_SUCCESS_TEXT: "Thank you! Your message has been sent successfully. We'll get back to you soon.",
+    SUBMIT_ERROR_TEXT: "An error occurred. Please try again.",
+    FULL_NAME_LABEL: "Full Name",
+    FULL_NAME_PLACEHOLDER: "John Doe",
+    EMAIL_LABEL: "Email Address",
+    EMAIL_PLACEHOLDER: "john@example.com",
+    PHONE_LABEL: "Phone Number",
+    PHONE_PLACEHOLDER: "+1 234 567 8900",
+    SUBJECT_LABEL: "Subject",
+    SUBJECT_PLACEHOLDER: "How can we help?",
+    MESSAGE_LABEL: "Message",
+    MESSAGE_PLACEHOLDER: "Tell us about your project or inquiry...",
+    REQUIRED_FIELD: "*",
+  },
+};

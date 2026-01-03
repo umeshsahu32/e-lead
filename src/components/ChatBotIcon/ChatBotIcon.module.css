@@ -1,0 +1,61 @@
+.chatBotIcon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: var(--radius-circle);
+  background: var(--gradient-primary);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md-primary);
+  z-index: var(--z-index-sticky);
+  transition: all var(--transition-fast);
+  padding: 0;
+}
+
+.chatBotIcon:hover {
+  transform: scale(1.1);
+  box-shadow: var(--shadow-lg-primary);
+}
+
+.chatBotIcon:active {
+  transform: scale(0.95);
+}
+
+.icon {
+  color: var(--color-white);
+  font-size: 28px;
+}
+
+.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: all var(--transition-fast);
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: all var(--transition-fast);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .chatBotIcon {
+    width: 55px;
+    height: 55px;
+    bottom: 20px;
+    right: 20px;
+  }
+
+  .icon {
+    font-size: 24px;
+  }
+}
+

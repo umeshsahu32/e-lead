@@ -1,0 +1,477 @@
+.caseStudySection {
+  padding: var(--spacing-section-lg) 0;
+  background: var(--gradient-bg-light);
+  position: relative;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--gap-xl);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-badge);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--gap-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  box-shadow: var(--shadow-md-primary);
+}
+
+.title {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--gap-sm);
+  line-height: var(--line-height-tight);
+}
+
+.subtitle {
+  font-size: var(--font-size-h5);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.filterSection {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+  margin-bottom: var(--gap-xl);
+}
+
+.filterButton {
+  padding: 0.75rem 1.5rem;
+  font-size: var(--font-size-body-small);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+  background: var(--color-white);
+  border: 2px solid var(--color-primary-lighter);
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.filterButton:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.filterButton.active {
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md-primary);
+}
+
+.caseStudyGrid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(auto, auto);
+  gap: 1.5rem;
+  padding: 1rem 0;
+  align-items: start;
+}
+
+.caseStudyCard {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.6s ease-out both;
+  border: 2px solid transparent;
+  position: relative;
+}
+
+.caseStudyCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--gradient-primary);
+  transform: scaleX(0);
+  transition: transform var(--transition-normal);
+}
+
+.caseStudyCard:hover::before {
+  transform: scaleX(1);
+}
+
+.caseStudyCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: var(--shadow-2xl);
+  border-color: var(--color-primary-light);
+}
+
+/* Large cards - span 7 columns */
+.cardLarge {
+  grid-column: span 7;
+  grid-row: span 1;
+}
+
+/* Medium cards - span 5 columns */
+.cardMedium {
+  grid-column: span 5;
+  grid-row: span 1;
+}
+
+/* Small cards - span 4 columns */
+.cardSmall {
+  grid-column: span 4;
+  grid-row: span 1;
+}
+
+/* Accent style for every 3rd card */
+.cardAccent {
+  background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+}
+
+.cardAccent .cardHeader {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+}
+
+.cardAccent .categoryBadge {
+  background: var(--color-white);
+  color: var(--color-primary);
+}
+
+.cardHeader {
+  padding: var(--gap-sm) var(--gap-lg);
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary-lighter) 100%);
+  border-bottom: 2px solid var(--color-primary-lighter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.cardNumber {
+  font-size: 0.875rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--color-primary);
+  opacity: 0.3;
+  font-family: 'Courier New', monospace;
+}
+
+.categoryBadge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--color-white);
+  border-radius: var(--radius-full);
+  font-size: 0.8125rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: var(--shadow-sm);
+}
+
+.cardContent {
+  padding: var(--gap-lg);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  min-height: 0;
+}
+
+.section {
+  position: relative;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.sectionTitle {
+  font-size: 1.125rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sectionIcon {
+  font-size: 1.25rem;
+}
+
+.sectionText {
+  font-size: var(--font-size-body-small);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+.cardFooter {
+  height: 4px;
+  background: var(--gradient-primary);
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  margin-top: auto;
+}
+
+.caseStudyCard:hover .cardFooter {
+  opacity: 1;
+}
+
+/* Add gradient overlay on hover for accent cards */
+.cardAccent:hover {
+  background: linear-gradient(135deg, #ffffff 0%, #f0f4ff 100%);
+}
+
+/* Add subtle shadow variations */
+.caseStudyCard:nth-child(3n + 1) {
+  box-shadow: var(--shadow-lg);
+}
+
+.caseStudyCard:nth-child(3n + 2) {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.caseStudyCard:nth-child(3n + 3) {
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Large cards get bigger text */
+.cardLarge .sectionText {
+  font-size: var(--font-size-body);
+}
+
+.cardLarge .sectionTitle {
+  font-size: 1.25rem;
+}
+
+.cardLarge .cardContent {
+  padding: var(--gap-lg);
+}
+
+/* Medium cards */
+.cardMedium .cardContent {
+  padding: var(--gap-md) var(--gap-lg);
+}
+
+/* Small cards - compact */
+.cardSmall .section {
+  padding-bottom: 0.875rem;
+}
+
+.cardSmall .cardContent {
+  padding: var(--gap-md);
+  gap: 0.875rem;
+}
+
+.cardSmall .sectionTitle {
+  font-size: 1rem;
+}
+
+.cardSmall .sectionText {
+  font-size: 0.875rem;
+}
+
+/* Add subtle rotation and depth for visual interest */
+.caseStudyCard:nth-child(odd) {
+  transform-origin: center;
+}
+
+.caseStudyCard:nth-child(even) {
+  transform-origin: center;
+}
+
+.caseStudyCard:hover {
+  z-index: 10;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Tablet Responsive */
+@media (max-width: 968px) {
+  .caseStudySection {
+    padding: var(--spacing-section-md) 0;
+  }
+
+  .caseStudyGrid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.25rem;
+  }
+
+  .cardLarge {
+    grid-column: span 6;
+    grid-row: span 1;
+  }
+
+  .cardMedium {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+
+  .cardSmall {
+    grid-column: span 3;
+    grid-row: span 1;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .caseStudySection {
+    padding: var(--spacing-section-sm) 0;
+  }
+
+  .container {
+    padding: 0 var(--container-padding-md);
+  }
+
+  .header {
+    margin-bottom: var(--gap-lg);
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .filterSection {
+    gap: var(--gap-xs);
+    margin-bottom: var(--gap-lg);
+  }
+
+  .filterButton {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+
+  .caseStudyGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .cardLarge,
+  .cardMedium,
+  .cardSmall {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .cardContent {
+    padding: var(--gap-md);
+  }
+
+  .section {
+    padding-bottom: 1.25rem;
+  }
+
+  .cardLarge .cardContent,
+  .cardMedium .cardContent,
+  .cardSmall .cardContent {
+    padding: var(--gap-md);
+  }
+
+  .cardLarge .sectionText,
+  .cardMedium .sectionText,
+  .cardSmall .sectionText {
+    font-size: var(--font-size-body-small);
+  }
+
+  .cardLarge .sectionTitle,
+  .cardMedium .sectionTitle,
+  .cardSmall .sectionTitle {
+    font-size: 1.125rem;
+  }
+
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .caseStudySection {
+    padding: var(--spacing-section-xs) 0;
+  }
+
+  .container {
+    padding: 0 var(--container-padding-sm);
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 1.25rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .filterButton {
+    padding: 0.5rem 1rem;
+    font-size: 0.8125rem;
+  }
+
+  .caseStudyGrid {
+    gap: 1.25rem;
+  }
+
+  .cardHeader {
+    padding: var(--gap-sm) var(--gap-md);
+  }
+
+  .categoryBadge {
+    padding: 0.4rem 0.875rem;
+    font-size: 0.75rem;
+  }
+
+  .cardContent {
+    padding: var(--gap-md);
+    gap: 1.25rem;
+  }
+
+  .section {
+    padding-bottom: 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 0.9375rem;
+  }
+
+  .sectionText {
+    font-size: 0.875rem;
+  }
+}
+

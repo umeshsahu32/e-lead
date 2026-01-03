@@ -1,0 +1,347 @@
+.whyLeadsFail {
+  padding: var(--spacing-section-md) 0;
+  background: var(--color-white);
+  position: relative;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--gap-md);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.textContent {
+  margin-bottom: var(--gap-md);
+}
+
+.mainText {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--gap-xs);
+  line-height: var(--line-height-normal);
+}
+
+.subText {
+  font-size: var(--font-size-h5);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+.combinedSection {
+  display: flex;
+  gap: 0;
+  margin-bottom: var(--gap-md);
+  background: var(--gradient-bg-light, rgba(0, 123, 255, 0.03));
+  border-radius: var(--radius-lg);
+  border-left: 4px solid var(--color-primary);
+  overflow: hidden;
+}
+
+.traditionalSection {
+  flex: 1;
+  padding: var(--gap-md);
+  border-right: 1px solid rgba(0, 123, 255, 0.15);
+}
+
+.traditionalTitle {
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--gap-sm);
+  text-align: left;
+}
+
+.problemsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xxs);
+}
+
+.problemItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-xxs);
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+}
+
+.bullet {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.2em;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.problemText {
+  flex: 1;
+}
+
+.consequencesSection {
+  flex: 1;
+  padding: var(--gap-md);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  justify-content: center;
+}
+
+.consequenceText {
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-normal);
+  font-style: italic;
+  margin: 0;
+}
+
+.solutionSection {
+  padding: var(--gap-sm);
+  background: var(--gradient-primary);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg-primary);
+}
+
+.solutionText {
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-white);
+  line-height: var(--line-height-normal);
+  margin: 0;
+  text-align: center;
+}
+
+/* Tablet Responsive */
+@media (max-width: 968px) {
+  .whyLeadsFail {
+    padding: var(--spacing-section-sm) 0;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-bottom: var(--gap-sm);
+  }
+
+  .textContent {
+    margin-bottom: var(--gap-sm);
+  }
+
+  .mainText {
+    font-size: 1.5rem;
+  }
+
+  .subText {
+    font-size: 1.125rem;
+  }
+
+  .combinedSection {
+    flex-direction: column;
+    margin-bottom: var(--gap-sm);
+  }
+
+  .traditionalSection {
+    padding: var(--gap-sm);
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 123, 255, 0.15);
+  }
+
+  .traditionalTitle {
+    font-size: 1.125rem;
+    margin-bottom: var(--gap-xs);
+  }
+
+  .problemItem {
+    font-size: 0.9375rem;
+  }
+
+  .consequenceText {
+    font-size: 0.9375rem;
+  }
+
+  .consequencesSection {
+    padding: var(--gap-sm);
+    gap: 0.25rem;
+  }
+
+  .solutionSection {
+    padding: var(--gap-xs);
+  }
+
+  .solutionText {
+    font-size: 1.125rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .whyLeadsFail {
+    padding: var(--spacing-section-sm) 0;
+  }
+
+  .container {
+    padding: 0 var(--container-padding-md);
+  }
+
+  .content {
+    text-align: left;
+  }
+
+  .title {
+    font-size: 2rem;
+    margin-bottom: var(--gap-sm);
+    text-align: center;
+  }
+
+  .textContent {
+    margin-bottom: var(--gap-sm);
+  }
+
+  .mainText {
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .subText {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .combinedSection {
+    flex-direction: column;
+    margin-bottom: var(--gap-sm);
+  }
+
+  .traditionalSection {
+    padding: var(--gap-sm);
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 123, 255, 0.15);
+  }
+
+  .traditionalTitle {
+    font-size: 1rem;
+    margin-bottom: var(--gap-xs);
+    text-align: left;
+  }
+
+  .problemsList {
+    gap: 0.375rem;
+  }
+
+  .problemItem {
+    font-size: 0.875rem;
+  }
+
+  .consequencesSection {
+    padding: var(--gap-sm);
+    text-align: center;
+    gap: 0.25rem;
+  }
+
+  .consequenceText {
+    font-size: 0.875rem;
+  }
+
+  .solutionSection {
+    padding: var(--gap-xs);
+  }
+
+  .solutionText {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .whyLeadsFail {
+    padding: var(--spacing-section-xs) 0;
+  }
+
+  .container {
+    padding: 0 var(--container-padding-sm);
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: var(--gap-xs);
+  }
+
+  .textContent {
+    margin-bottom: var(--gap-xs);
+  }
+
+  .mainText {
+    font-size: 1.125rem;
+    margin-bottom: 0.375rem;
+  }
+
+  .subText {
+    font-size: 0.9375rem;
+  }
+
+  .combinedSection {
+    flex-direction: column;
+    margin-bottom: var(--gap-xs);
+  }
+
+  .traditionalSection {
+    padding: var(--gap-xs);
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 123, 255, 0.15);
+  }
+
+  .consequencesSection {
+    padding: var(--gap-xs);
+  }
+
+  .traditionalTitle {
+    font-size: 0.9375rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .problemsList {
+    gap: 0.25rem;
+  }
+
+  .problemItem {
+    font-size: 0.8125rem;
+  }
+
+  .consequencesSection {
+    margin-bottom: var(--gap-xs);
+    gap: 0.25rem;
+  }
+
+  .consequenceText {
+    font-size: 0.8125rem;
+  }
+
+  .solutionSection {
+    padding: var(--gap-xs);
+  }
+
+  .solutionText {
+    font-size: 0.9375rem;
+  }
+}
+

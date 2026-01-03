@@ -1,0 +1,328 @@
+.successStories {
+  padding: var(--spacing-section-lg) 0;
+  background: linear-gradient(180deg, var(--color-white) 0%, var(--color-bg-light) 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.successStories::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-radial-primary);
+  pointer-events: none;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  position: relative;
+  z-index: var(--z-index-base);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.titleWrapper {
+  margin-bottom: 3rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1.25rem;
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-badge);
+  font-weight: var(--font-weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  margin-bottom: var(--gap-sm);
+  box-shadow: var(--shadow-md-primary);
+}
+
+.title {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--gap-sm);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
+
+.subtitle {
+  font-size: var(--font-size-h5);
+  color: var(--color-text-secondary);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: var(--line-height-relaxed);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.statCard {
+  background: var(--color-white);
+  padding: var(--gap-md);
+  border-radius: var(--radius-md);
+  text-align: center;
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-fast);
+  border: 2px solid transparent;
+}
+
+.statCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+  border-color: var(--color-primary);
+}
+
+.statNumber {
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: var(--font-size-body-small);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-regular);
+}
+
+.storiesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.storyCard {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--gap-md);
+  box-shadow: var(--shadow-lg);
+  transition: all var(--transition-normal);
+  border-left: 4px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+.storyCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--gradient-primary);
+  transform: scaleY(0);
+  transition: transform var(--transition-normal);
+}
+
+
+
+.storyCard:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-2xl);
+  border-left-color: var(--color-primary);
+}
+
+.cardHeader {
+  margin-bottom: 1.5rem;
+}
+
+.categoryTag {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, var(--color-primary-light) 0%, var(--color-primary-lighter) 100%);
+  color: var(--color-primary);
+  border-radius: var(--radius-lg);
+  font-size: var(--font-size-body-xs);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.cardBody {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.section:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: 0.75rem;
+}
+
+.sectionIcon {
+  font-size: 1.25rem;
+}
+
+.sectionText {
+  font-size: var(--font-size-body-small);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin: 0;
+}
+
+.exploreSection {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.exploreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: var(--gap-xs) 2.5rem;
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-h6);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-fast);
+  box-shadow: var(--shadow-md-primary);
+}
+
+.exploreBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg-primary);
+}
+
+.exploreBtn svg {
+  transition: transform 0.3s ease;
+}
+
+.exploreBtn:hover svg {
+  transform: translateX(4px);
+}
+
+/* Tablet Responsive */
+@media (max-width: 968px) {
+  .successStories {
+    padding: 4rem 0;
+  }
+
+  .container {
+    padding: 0 var(--container-padding-md);
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.125rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .storiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem;
+  }
+
+  .statNumber {
+    font-size: 2.5rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .successStories {
+    padding: 3rem 0;
+  }
+
+  .container {
+    padding: 0 var(--container-padding-sm);
+  }
+
+  .titleWrapper {
+    margin-bottom: 2rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .statCard {
+    padding: 1.5rem;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+  }
+
+  .storiesGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .storyCard {
+    padding: 1.5rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .successStories {
+    padding: 2.5rem 0;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .statNumber {
+    font-size: 1.75rem;
+  }
+}
+

@@ -1,0 +1,235 @@
+.mapSection {
+  padding: var(--spacing-section-lg) 0;
+  background: var(--gradient-bg-light);
+  position: relative;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: var(--gap-xl);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-badge);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--gap-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  box-shadow: var(--shadow-md-primary);
+}
+
+.title {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--gap-sm);
+  line-height: var(--line-height-tight);
+}
+
+.subtitle {
+  font-size: var(--font-size-h5);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mapWrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--gap-xl);
+  align-items: start;
+}
+
+.mapContainer {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-xl);
+  background: var(--color-bg-light);
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.mapInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-md);
+}
+
+.infoItem {
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--gap-lg);
+  display: flex;
+  gap: var(--gap-md);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+}
+
+.infoItem:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.infoIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: var(--radius-md);
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.infoIcon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.infoContent {
+  flex: 1;
+}
+
+.infoTitle {
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--gap-xxs);
+  line-height: var(--line-height-tight);
+}
+
+.infoText {
+  font-size: var(--font-size-body-small);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+/* Tablet Responsive */
+@media (max-width: 968px) {
+  .mapSection {
+    padding: var(--spacing-section-md) 0;
+  }
+
+  .mapWrapper {
+    grid-template-columns: 1fr;
+    gap: var(--gap-lg);
+  }
+
+  .mapContainer {
+    height: 400px;
+  }
+
+  .mapInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--gap-md);
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .mapSection {
+    padding: var(--spacing-section-sm) 0;
+  }
+
+  .container {
+    padding: 0 var(--container-padding-md);
+  }
+
+  .header {
+    margin-bottom: var(--gap-lg);
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 1.25rem;
+  }
+
+  .title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .mapWrapper {
+    gap: var(--gap-md);
+  }
+
+  .mapContainer {
+    height: 350px;
+  }
+
+  .mapInfo {
+    grid-template-columns: 1fr;
+  }
+
+  .infoItem {
+    padding: var(--gap-md);
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .mapSection {
+    padding: var(--spacing-section-xs) 0;
+  }
+
+  .container {
+    padding: 0 var(--container-padding-sm);
+  }
+
+  .header {
+    margin-bottom: var(--gap-md);
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.9375rem;
+  }
+
+  .mapContainer {
+    height: 300px;
+  }
+
+  .infoItem {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .infoIcon {
+    width: 60px;
+    height: 60px;
+  }
+
+  .infoIcon svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+

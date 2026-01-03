@@ -1,0 +1,663 @@
+.aboutSection {
+  padding: var(--spacing-section-md) 0;
+  background: var(--gradient-bg-light);
+  position: relative;
+  overflow: hidden;
+}
+
+.aboutSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-radial-primary);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-lg);
+}
+
+/* Introduction Section */
+.introSection {
+  text-align: center;
+}
+
+.introText {
+  font-size: var(--font-size-h5);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Content Block Styles */
+.contentBlock {
+  background: var(--color-white);
+  padding: var(--gap-lg);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  border: 1px solid transparent;
+}
+
+.contentBlock:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-3px);
+  border-color: var(--color-primary-light);
+}
+
+.blockHeader {
+  text-align: center;
+  margin-bottom: var(--gap-md);
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  background: var(--gradient-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-badge);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--gap-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing-wide);
+  box-shadow: var(--shadow-md-primary);
+}
+
+.blockTitle {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--gap-xs);
+  line-height: var(--line-height-tight);
+}
+
+.blockDescription {
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blockConclusion {
+  font-size: var(--font-size-body);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+  text-align: center;
+  margin-top: var(--gap-md);
+  padding-top: var(--gap-md);
+  border-top: 2px solid var(--color-primary-lighter);
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: var(--line-height-relaxed);
+}
+
+/* Bullet List Styles */
+.bulletList {
+  list-style: none;
+  padding: 0;
+  margin: var(--gap-md) 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-xs);
+}
+
+.bulletItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  padding: var(--gap-sm);
+  background: var(--color-bg-light);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-primary);
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+/* .bulletIcon {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.5rem;
+  line-height: 1;
+  flex-shrink: 0;
+} */
+
+/* Beliefs Container */
+.beliefsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+  margin: var(--gap-md) 0;
+}
+
+.beliefCard {
+  background: var(--color-white);
+  padding: var(--gap-sm);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-primary-lighter);
+  display: flex;
+  align-items: center;
+  gap: var(--gap-xs);
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  flex: 1;
+  min-width: 200px;
+  transition: all var(--transition-fast);
+}
+
+.beliefCard:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.checkIcon {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Feature List Styles */
+.featureList {
+  list-style: none;
+  padding: 0;
+  margin: var(--gap-md) 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--gap-xs);
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-sm);
+  padding: var(--gap-sm);
+  background: linear-gradient(
+    90deg,
+    var(--color-primary-lighter) 0%,
+    var(--color-white) 10%
+  );
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--color-primary);
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  transition: all var(--transition-fast);
+}
+
+.featureItem:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-sm);
+}
+
+.featureIcon {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.tagline {
+  font-size: var(--font-size-h5);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  margin-top: var(--gap-md);
+  padding-top: var(--gap-md);
+  border-top: 2px solid var(--color-primary-lighter);
+  font-style: italic;
+}
+
+/* Training List */
+.trainingList {
+  list-style: none;
+  padding: 0;
+  margin: var(--gap-md) 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap-sm);
+}
+
+.trainingItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  padding: var(--gap-sm);
+  background: var(--color-bg-light);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  flex: 1;
+  min-width: 250px;
+}
+
+.trainingIcon {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* Industries Grid */
+.industriesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--gap-sm);
+  margin: var(--gap-md) 0;
+}
+
+.industryCard {
+  background: var(--color-white);
+  padding: var(--gap-md);
+  border-radius: var(--radius-md);
+  border: 2px solid var(--color-primary-lighter);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-xs);
+  text-align: center;
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
+  transition: all var(--transition-fast);
+  flex: 1;
+  min-width: 180px;
+}
+
+.industryCard:hover {
+  border-color: var(--color-primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.industryIcon {
+  font-size: 2rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+/* Mission Vision Grid */
+.missionVisionGrid {
+  display: flex;
+  gap: var(--gap-lg);
+  margin: var(--gap-lg) 0;
+}
+
+.missionCard,
+.visionCard {
+  background: var(--color-white);
+  padding: var(--gap-lg);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  border: 2px solid transparent;
+  transition: all var(--transition-normal);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.missionCard:hover,
+.visionCard:hover {
+  box-shadow: var(--shadow-xl);
+  transform: translateY(-5px);
+  border-color: var(--color-primary-light);
+}
+
+.missionCard .badge,
+.visionCard .badge {
+  align-self: flex-start;
+  margin-bottom: var(--gap-sm);
+}
+
+.cardTitle {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-bottom: var(--gap-xs);
+  line-height: var(--line-height-tight);
+}
+
+.cardDescription {
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--gap-sm);
+}
+
+.cardList {
+  list-style: none;
+  padding: 0;
+  margin: var(--gap-sm) 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  flex: 1;
+}
+
+.cardListItem {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+  padding: var(--gap-xs);
+  background: var(--color-bg-light);
+  border-radius: var(--radius-sm);
+  font-size: var(--font-size-body);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+.cardIcon {
+  color: var(--color-primary);
+  font-weight: var(--font-weight-bold);
+  flex-shrink: 0;
+}
+
+.cardConclusion {
+  font-size: var(--font-size-body);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+  margin-top: var(--gap-sm);
+  padding-top: var(--gap-sm);
+  border-top: 2px solid var(--color-primary-lighter);
+}
+
+/* Closing Section */
+.closingSection {
+  background: var(--gradient-primary);
+  padding: var(--gap-lg);
+  border-radius: var(--radius-xl);
+  text-align: center;
+  color: var(--color-white);
+  margin-top: var(--gap-lg);
+  box-shadow: var(--shadow-xl);
+}
+
+.closingTitle {
+  font-size: var(--font-size-h2);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--gap-sm);
+  line-height: var(--line-height-tight);
+}
+
+.closingDescription {
+  font-size: var(--font-size-body);
+  margin-bottom: var(--gap-md);
+  opacity: 0.95;
+  line-height: var(--line-height-relaxed);
+}
+
+.closingBeliefs {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-xs);
+  margin: var(--gap-md) 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.closingBeliefCard {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: var(--gap-sm);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  gap: var(--gap-sm);
+  font-size: var(--font-size-body);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all var(--transition-fast);
+}
+
+.closingBeliefCard:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateX(5px);
+}
+
+.closingIcon {
+  font-weight: var(--font-weight-bold);
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.closingConclusion {
+  font-size: var(--font-size-h5);
+  font-weight: var(--font-weight-semibold);
+  margin-top: var(--gap-md);
+  font-style: italic;
+}
+
+/* Tablet Responsive */
+@media (max-width: 968px) {
+  .aboutSection {
+    padding: var(--spacing-section-sm) 0;
+  }
+
+  .container {
+    padding: 0 var(--container-padding-md);
+    gap: var(--gap-md);
+  }
+
+  .introText {
+    font-size: 1.125rem;
+  }
+
+  .contentBlock {
+    padding: var(--gap-md);
+  }
+
+  .blockTitle {
+    font-size: 2rem;
+  }
+
+  .beliefsContainer {
+    flex-direction: column;
+  }
+
+  .beliefCard {
+    min-width: auto;
+  }
+
+  .trainingList {
+    flex-direction: column;
+  }
+
+  .trainingItem {
+    min-width: auto;
+  }
+
+  .bulletList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .featureList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .industriesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .missionVisionGrid {
+    flex-direction: column;
+    gap: var(--gap-md);
+  }
+
+  .closingSection {
+    padding: var(--gap-md);
+  }
+
+  .closingTitle {
+    font-size: 2rem;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: var(--spacing-section-xs) 0;
+  }
+
+  .container {
+    padding: 0 var(--container-padding-md);
+    gap: var(--gap-md)
+  }
+
+  .introText {
+    font-size: 1rem;
+  }
+
+  .contentBlock {
+    padding: var(--gap-sm);
+  }
+
+  .badge {
+    font-size: 0.75rem;
+    padding: 0.4rem 1.25rem;
+  }
+
+  .blockTitle {
+    font-size: 1.75rem;
+  }
+
+  .blockDescription {
+    font-size: var(--font-size-body-small);
+  }
+
+  .bulletList {
+    grid-template-columns: 1fr;
+  }
+
+  .featureList {
+    grid-template-columns: 1fr;
+  }
+
+  .bulletItem,
+  .featureItem,
+  .trainingItem,
+  .cardListItem {
+    font-size: var(--font-size-body-small);
+    padding: var(--gap-xs);
+  }
+
+  .beliefCard {
+    padding: var(--gap-xs);
+    font-size: var(--font-size-body-small);
+  }
+
+  .industriesGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .missionCard,
+  .visionCard {
+    padding: var(--gap-md);
+  }
+
+  .cardTitle {
+    font-size: 1.5rem;
+  }
+
+  .closingSection {
+    padding: var(--gap-sm);
+  }
+
+  .closingTitle {
+    font-size: 1.75rem;
+  }
+
+  .closingDescription {
+    font-size: var(--font-size-body-small);
+  }
+
+  .closingBeliefCard {
+    padding: var(--gap-xs);
+    font-size: var(--font-size-body-small);
+  }
+
+  .closingConclusion {
+    font-size: 1rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .aboutSection {
+    padding: 2rem 0;
+  }
+
+  .container {
+    padding: 0 var(--container-padding-sm);
+    gap: var(--gap-xs);
+  }
+
+  .contentBlock {
+    padding: var(--gap-xs);
+  }
+
+  .blockTitle {
+    font-size: 1.5rem;
+  }
+
+  .blockDescription {
+    font-size: 0.9375rem;
+  }
+
+  .introText {
+    font-size: 0.9375rem;
+  }
+
+  .bulletItem,
+  .featureItem,
+  .trainingItem,
+  .cardListItem,
+  .beliefCard {
+    font-size: 0.875rem;
+    padding: 0.75rem;
+  }
+
+  .missionCard,
+  .visionCard {
+    padding: var(--gap-sm);
+  }
+
+  .cardTitle {
+    font-size: 1.25rem;
+  }
+
+  .closingSection {
+    padding: var(--gap-sm);
+  }
+
+  .closingTitle {
+    font-size: 1.5rem;
+  }
+
+  .closingDescription {
+    font-size: 0.875rem;
+  }
+
+  .closingBeliefCard {
+    font-size: 0.875rem;
+  }
+
+  .closingConclusion {
+    font-size: 0.9375rem;
+  }
+}
