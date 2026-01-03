@@ -12,6 +12,7 @@ import {
   NotFound,
 } from "./routes.js";
 
+
 const AppRouter = createBrowserRouter([
   {
     path: "/",
