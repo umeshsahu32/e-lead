@@ -4,7 +4,7 @@
   left: 0;
   right: 0;
   background-color: var(--color-dark);
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1), 0 4px 20px rgba(0, 0, 0, 0.05);
   z-index: var(--z-index-sticky);
 }
 
@@ -40,7 +40,7 @@
 
 .menuItem {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-text-primary);
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-regular);
   transition: all var(--transition-fast);
@@ -68,10 +68,8 @@
 }
 
 .menuItem:hover {
-  color: var(--color-white);
-  text-shadow: 0 0 10px rgba(0, 123, 255, 0.8), 0 0 20px rgba(0, 123, 255, 0.6),
-    0 0 30px rgba(0, 123, 255, 0.4);
-  /* box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3); */
+  color: var(--color-primary);
+  text-shadow: none;
 }
 
 .menuItem:hover::after {
@@ -79,10 +77,9 @@
 }
 
 .menuItem.active {
-  color: var(--color-white);
-  text-shadow: 0 0 10px rgba(0, 123, 255, 0.8), 0 0 20px rgba(0, 123, 255, 0.6),
-    0 0 30px rgba(0, 123, 255, 0.4);
-  /* box-shadow: 0 4px 20px rgba(0, 123, 255, 0.4); */
+  color: var(--color-primary);
+  text-shadow: none;
+  font-weight: var(--font-weight-semibold);
 }
 
 .menuItem.active::after {
@@ -97,7 +94,7 @@
   background: none;
   border: none;
   cursor: pointer;
-  color: #ffffff;
+  color: var(--color-text-primary);
   padding: 0.5rem;
   z-index: var(--z-index-modal);
   transition: color var(--transition-fast);

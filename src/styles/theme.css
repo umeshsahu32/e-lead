@@ -5,17 +5,17 @@
 :root {
   /* ========== COLORS ========== */
   /* Primary Colors */
-  --color-primary: #007bff;
-  --color-primary-dark: #0056b3;
+  --color-primary:  #6A289E;
+  --color-primary-dark: #421961;
   --color-primary-light: rgba(0, 123, 255, 0.1);
   --color-primary-lighter: rgba(0, 123, 255, 0.05);
   
   /* Secondary Colors */
-  --color-secondary: #0056b3;
+  --color-secondary: #24125E;
   
   /* Neutral Colors */
-  --color-dark: #303030;
-  --color-dark-light: #1a1a1a;
+  --color-dark: #fafafa;
+  --color-dark-light: #e0e0e0;
   --color-text-primary: #303030;
   --color-text-secondary: #666666;
   --color-text-tertiary: #555555;
