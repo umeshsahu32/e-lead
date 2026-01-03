@@ -29,19 +29,6 @@ const ContactInfo = () => {
                 <p className={styles.cardContentText}>{method.content}</p>
                 <p className={styles.cardSubtitle}>{method.subtitle}</p>
               </div>
-              <div className={styles.cardArrow}>
-                <svg
-                  width="20"
-                  height="20"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                >
-                  <line x1="5" y1="12" x2="19" y2="12"></line>
-                  <polyline points="12 5 19 12 12 19"></polyline>
-                </svg>
-              </div>
             </a>
           ))}
         </div>
