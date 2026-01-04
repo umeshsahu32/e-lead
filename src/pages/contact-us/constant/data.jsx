@@ -1,4 +1,4 @@
-export   const contactMethods = [
+export const contactMethods = [
   {
     id: 1,
     icon: (
@@ -14,9 +14,9 @@ export   const contactMethods = [
       </svg>
     ),
     title: "Phone",
-    content: "+1 (555) 123-4567",
+    content: "+91 91547 65825",
     subtitle: "Mon-Fri 9am-6pm",
-    link: "tel:+15551234567",
+    link: "tel:+919154765825",
   },
   {
     id: 2,
@@ -34,9 +34,9 @@ export   const contactMethods = [
       </svg>
     ),
     title: "Email",
-    content: "info@e-lead.com",
+    content: "hello@elead.shop",
     subtitle: "We reply within 24 hours",
-    link: "mailto:info@e-lead.com",
+    link: "mailto:hello@elead.shop",
   },
   {
     id: 3,
@@ -54,28 +54,9 @@ export   const contactMethods = [
       </svg>
     ),
     title: "Address",
-    content: "123 Business Street",
-    subtitle: "New York, NY 10001",
+    content:
+      "First Floor, Flat No 101, RR Heights, East Srinivas Nagar, Ameerpet",
+    subtitle: "Hyderabad, Telangana",
     link: "#",
   },
-  // {
-  //   id: 4,
-  //   icon: (
-  //     <svg
-  //       width="48"
-  //       height="48"
-  //       viewBox="0 0 24 24"
-  //       fill="none"
-  //       stroke="currentColor"
-  //       strokeWidth="2"
-  //     >
-  //       <circle cx="12" cy="12" r="10"></circle>
-  //       <polyline points="12 6 12 12 16 14"></polyline>
-  //     </svg>
-  //   ),
-  //   title: "Business Hours",
-  //   content: "Monday - Friday",
-  //   subtitle: "9:00 AM - 6:00 PM EST",
-  //   link: "#",
-  // },
 ];

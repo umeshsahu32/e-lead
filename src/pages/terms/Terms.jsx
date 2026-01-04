@@ -9,7 +9,7 @@ const Terms = () => {
             <span className={styles.badge}>Terms of Service</span>
             <h1 className={styles.heroTitle}>Terms and Conditions</h1>
             <p className={styles.heroSubtitle}>
-              Last Updated: {new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              Effective Date: 4 Jan 2026; Last Updated: 4 Jan 2026
             </p>
           </div>
         </div>
@@ -19,184 +19,110 @@ const Terms = () => {
         <div className={styles.container}>
           <div className={styles.content}>
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>1. Agreement to Terms</h2>
               <p className={styles.sectionText}>
-                By accessing or using our website and services, you agree to be bound by these Terms of Service and all 
-                applicable laws and regulations. If you do not agree with any of these terms, you are prohibited from using 
-                or accessing this site.
-              </p>
-              <p className={styles.sectionText}>
-                The materials contained in this website are protected by applicable copyright and trademark law. These Terms 
-                constitute a legally binding agreement between you and E-Lead.
+                Welcome to www.elead.shop, a website operated by Leadsync Technologies ("we," "our," "us"). By accessing or using this website, you agree to comply with and be bound by the following terms and conditions. Please read these terms carefully before using our website. If you do not agree with any part of these terms, you must not use our website.
               </p>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>2. Use License</h2>
+              <h2 className={styles.sectionTitle}>1. Acceptance of Terms</h2>
               <p className={styles.sectionText}>
-                Permission is granted to temporarily download one copy of the materials on E-Lead's website for personal, 
-                non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under 
-                this license you may not:
+                By using this website, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions, as well as our Privacy Policy. These terms apply to all visitors, users, and others who access or use the website.
+              </p>
+            </section>
+
+            <section className={styles.section}>
+              <h2 className={styles.sectionTitle}>2. Use of Website</h2>
+              <h3 className={styles.subsectionTitle}>2.1 License</h3>
+              <p className={styles.sectionText}>
+                eLead grants you a limited, non-exclusive, non-transferable, and revocable license to access and use the website for your personal or business purposes, subject to these Terms and Conditions.
+              </p>
+              <h3 className={styles.subsectionTitle}>2.2 Prohibited Conduct</h3>
+              <p className={styles.sectionText}>
+                You agree not to engage in any of the following prohibited activities:
               </p>
               <ul className={styles.list}>
-                <li>Modify or copy the materials</li>
-                <li>Use the materials for any commercial purpose or for any public display</li>
-                <li>Attempt to decompile or reverse engineer any software contained on the website</li>
-                <li>Remove any copyright or other proprietary notations from the materials</li>
-                <li>Transfer the materials to another person or "mirror" the materials on any other server</li>
+                <li>Using the website for any unlawful purpose or in violation of any applicable laws or regulations.</li>
+                <li>Attempting to interfere with, disrupt, or disable the website's functionality, including through the use of viruses, bots, or other malicious code.</li>
+                <li>Accessing or using the website to collect any personally identifiable information, including account names or email addresses, for commercial purposes.</li>
+                <li>Attempting to gain unauthorized access to any part of the website, other users' accounts, or any computer systems or networks connected to the website.</li>
+                <li>Impersonating any person or entity, or falsely stating or otherwise misrepresenting your affiliation with a person or entity.</li>
               </ul>
-            </section>
-
-            <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>3. Services</h2>
+              <h3 className={styles.subsectionTitle}>2.3 Modifications to the Website</h3>
               <p className={styles.sectionText}>
-                E-Lead provides digital solutions including but not limited to web development, mobile app development, 
-                digital marketing, and consulting services. We reserve the right to:
-              </p>
-              <ul className={styles.list}>
-                <li>Modify or discontinue any service at any time</li>
-                <li>Refuse service to anyone for any reason</li>
-                <li>Change pricing and service offerings with reasonable notice</li>
-                <li>Limit the quantity of any service or product offered</li>
-              </ul>
-            </section>
-
-            <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>4. User Accounts</h2>
-              <p className={styles.sectionText}>
-                When you create an account with us, you must provide information that is accurate, complete, and current at 
-                all times. You are responsible for safeguarding the password and for all activities that occur under your account.
-              </p>
-              <p className={styles.sectionText}>
-                You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware 
-                of any breach of security or unauthorized use of your account.
+                We reserve the right to modify, suspend, or discontinue any part of the website at any time without notice. We will not be liable to you or any third party for any modification, suspension, or discontinuance of the website or any part thereof.
               </p>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>5. Payment Terms</h2>
+              <h2 className={styles.sectionTitle}>3. Intellectual Property</h2>
+              <h3 className={styles.subsectionTitle}>3.1 Ownership</h3>
               <p className={styles.sectionText}>
-                Payment terms will be specified in individual service agreements. Generally:
+                All content on the website, including text, graphics, logos, images, and software, is the property of Leadsync Technologies or its content suppliers and is protected by copyright, trademark, and other intellectual property laws. You may not reproduce, distribute, modify, or create derivative works based on any content without our express written permission.
               </p>
-              <ul className={styles.list}>
-                <li>Payment is due as specified in your service agreement or invoice</li>
-                <li>Late payments may incur interest charges or service suspension</li>
-                <li>All fees are non-refundable unless otherwise specified</li>
-                <li>Prices are subject to change with prior notice</li>
-              </ul>
-            </section>
-
-            <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>6. Intellectual Property</h2>
+              <h3 className={styles.subsectionTitle}>3.2 Trademarks</h3>
               <p className={styles.sectionText}>
-                The Service and its original content, features, and functionality are and will remain the exclusive property 
-                of E-Lead and its licensors. The Service is protected by copyright, trademark, and other laws. Our trademarks 
-                and trade dress may not be used in connection with any product or service without our prior written consent.
+                "eLead," "Leadsync Technologies," and all related logos, product names, and services mentioned on the website are trademarks of Leadsync Technologies or its affiliates. You may not use any of these trademarks without our prior written consent.
               </p>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>7. User Content</h2>
+              <h2 className={styles.sectionTitle}>4. User Content</h2>
+              <h3 className={styles.subsectionTitle}>4.1 User Submissions</h3>
               <p className={styles.sectionText}>
-                Our Service may allow you to post, link, store, share and otherwise make available certain information, text, 
-                graphics, or other material. You are responsible for the content that you post on or through the Service, including 
-                its legality, reliability, and appropriateness.
+                You may have the opportunity to post, submit, or otherwise make available content, such as comments, feedback, or other information ("User Content") on the website. By submitting User Content, you grant eLead a non-exclusive, worldwide, royalty-free, perpetual, and irrevocable license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, and display such content.
               </p>
+              <h3 className={styles.subsectionTitle}>4.2 Responsibility</h3>
               <p className={styles.sectionText}>
-                By posting content on or through the Service, you grant us the right and license to use, modify, publicly perform, 
-                publicly display, reproduce, and distribute such content on and through the Service.
-              </p>
-            </section>
-
-            <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>8. Prohibited Uses</h2>
-              <p className={styles.sectionText}>
-                You may not use our Service:
-              </p>
-              <ul className={styles.list}>
-                <li>For any unlawful purpose or to solicit others to perform unlawful acts</li>
-                <li>To violate any international, federal, provincial, or state regulations, rules, laws, or local ordinances</li>
-                <li>To infringe upon or violate our intellectual property rights or the intellectual property rights of others</li>
-                <li>To harass, abuse, insult, harm, defame, slander, disparage, intimidate, or discriminate</li>
-                <li>To submit false or misleading information</li>
-                <li>To upload or transmit viruses or any other type of malicious code</li>
-              </ul>
-            </section>
-
-            <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>9. Disclaimer</h2>
-              <p className={styles.sectionText}>
-                The materials on E-Lead's website are provided on an 'as is' basis. E-Lead makes no warranties, expressed or implied, 
-                and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions 
-                of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation 
-                of rights.
+                You are solely responsible for the content you submit and agree that your User Content will not violate any applicable law, infringe upon any third-party rights, or contain any defamatory, obscene, or otherwise objectionable material.
               </p>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>10. Limitations</h2>
+              <h2 className={styles.sectionTitle}>5. Disclaimers</h2>
+              <h3 className={styles.subsectionTitle}>5.1 No Warranties</h3>
               <p className={styles.sectionText}>
-                In no event shall E-Lead or its suppliers be liable for any damages (including, without limitation, damages for loss 
-                of data or profit, or due to business interruption) arising out of the use or inability to use the materials on 
-                E-Lead's website, even if E-Lead or an authorized representative has been notified orally or in writing of the 
-                possibility of such damage.
+                The website is provided on an "as-is" and "as-available" basis. eLead makes no warranties, express or implied, regarding the website's operation, content, or the information provided. To the fullest extent permitted by law, we disclaim all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.
+              </p>
+              <h3 className={styles.subsectionTitle}>5.2 Limitation of Liability</h3>
+              <p className={styles.sectionText}>
+                eLead shall not be liable for any damages, including but not limited to direct, indirect, incidental, punitive, and consequential damages, arising out of or in connection with your use of the website, even if we have been advised of the possibility of such damages. Your sole remedy for dissatisfaction with the website is to stop using it.
               </p>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>11. Revisions and Errata</h2>
+              <h2 className={styles.sectionTitle}>6. Indemnification</h2>
               <p className={styles.sectionText}>
-                The materials appearing on E-Lead's website could include technical, typographical, or photographic errors. E-Lead 
-                does not warrant that any of the materials on its website are accurate, complete, or current. E-Lead may make changes 
-                to the materials contained on its website at any time without notice.
+                You agree to indemnify, defend, and hold harmless eLead, its affiliates, officers, directors, employees, and agents from and against any and all claims, damages, losses, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or in connection with your use of the website, your violation of these Terms and Conditions, or your violation of any rights of another.
               </p>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>12. Links</h2>
+              <h2 className={styles.sectionTitle}>7. Termination</h2>
               <p className={styles.sectionText}>
-                E-Lead has not reviewed all of the sites linked to its website and is not responsible for the contents of any such 
-                linked site. The inclusion of any link does not imply endorsement by E-Lead of the site. Use of any such linked 
-                website is at the user's own risk.
+                We reserve the right to terminate or suspend your access to the website, without notice, for conduct that we believe violates these Terms and Conditions or is harmful to other users, us, or third parties, or for any other reason at our sole discretion.
               </p>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>13. Termination</h2>
+              <h2 className={styles.sectionTitle}>8. Governing Law</h2>
               <p className={styles.sectionText}>
-                We may terminate or suspend your account and bar access to the Service immediately, without prior notice or liability, 
-                under our sole discretion, for any reason whatsoever and without limitation, including but not limited to a breach 
-                of the Terms.
+                These Terms and Conditions are governed by and construed in accordance with the laws of India. You agree to submit to the exclusive jurisdiction of the courts located in Hyderabad, India, for the resolution of any disputes arising out of or relating to these terms or your use of the website.
               </p>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>14. Governing Law</h2>
+              <h2 className={styles.sectionTitle}>9. Changes to These Terms</h2>
               <p className={styles.sectionText}>
-                These Terms shall be interpreted and governed by the laws of the jurisdiction in which E-Lead operates, without regard 
-                to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered 
-                a waiver of those rights.
+                eLead may update these Terms and Conditions from time to time. We will notify you of any changes by posting the new terms on this page and updating the effective date. Your continued use of the website after any changes indicates your acceptance of the revised terms.
               </p>
             </section>
 
             <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>15. Changes to Terms</h2>
+              <h2 className={styles.sectionTitle}>10. Contact Us</h2>
               <p className={styles.sectionText}>
-                We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material, 
-                we will provide at least 30 days notice prior to any new terms taking effect.
+                If you have any questions or concerns about these Terms and Conditions, please write to us at hello@elead.shop.
               </p>
-            </section>
-
-            <section className={styles.section}>
-              <h2 className={styles.sectionTitle}>16. Contact Information</h2>
-              <p className={styles.sectionText}>
-                If you have any questions about these Terms of Service, please contact us:
-              </p>
-              <div className={styles.contactInfo}>
-                <p><strong>Email:</strong> legal@e-lead.com</p>
-                <p><strong>Phone:</strong> +1 (555) 123-4567</p>
-                <p><strong>Address:</strong> 123 Business Street, New York, NY 10001</p>
-              </div>
             </section>
           </div>
         </div>

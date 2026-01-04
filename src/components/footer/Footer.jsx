@@ -5,6 +5,7 @@ import {
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
+  FaLinkedin,
 } from "react-icons/fa";
 import styles from "./Footer.module.css";
 import logo from "../../assets/logo/logo_color.png";
@@ -21,38 +22,44 @@ const Footer = () => {
 
   const contactInfo = {
     address: {
-      label: "123 Business Street, Suite 100, City, State 12345",
+      label:
+        "First Floor, Flat No 101, RR Heights, East Srinivas Nagar, Ameerpet, Hyderabad, Telangana – 500038",
       icon: <FaMapMarkerAlt />,
     },
     phoneNumber: {
-      label: "+1 (234) 567-890",
+      label: "+91 91547 65825",
       icon: <FaPhone />,
     },
     emailAddress: {
-      label: "info@example.com",
+      label: "hello@elead.shop",
       icon: <FaEnvelope />,
     },
     socialMedia: {
       instagram: {
         label: "Instagram",
         icon: <FaInstagram />,
-        link: "https://www.instagram.com",
+        link: "https://www.instagram.com/elead.shop/",
       },
       facebook: {
         label: "Facebook",
         icon: <FaFacebook />,
-        link: "https://www.facebook.com",
+        link: "https://www.facebook.com/profile.php?id=61585573326187",
+      },
+      linkedin: {
+        label: "LinkedIn",
+        icon: <FaLinkedin />,
+        link: "https://www.linkedin.com/company/eleadindia/ ",
       },
     },
     description:
       "Transforming businesses with innovative digital solutions. We help you achieve remarkable growth through cutting-edge technology and creative strategies.",
-      Quick_links: "Quick Links",
-      Contact_us: "Contact Us",
-      Follow_us: "Follow Us",
-      Privacy_policy: "Privacy Policy",
-      Terms_and_conditions: "Terms and Conditions",
-      Copyright: "Copyright",
-      All_rights_reserved: "All rights reserved.",
+    Quick_links: "Quick Links",
+    Contact_us: "Contact Us",
+    Follow_us: "Follow Us",
+    Privacy_policy: "Privacy Policy",
+    Terms_and_conditions: "Terms and Conditions",
+    Copyright: "Copyright",
+    All_rights_reserved: "All rights reserved.",
   };
 
   const currentYear = new Date().getFullYear();
@@ -130,14 +137,23 @@ const Footer = () => {
                 {contactInfo.socialMedia.instagram.icon}
               </a>
               <a
-                href={contactInfo.socialMedia.facebook.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={styles.socialLink}
-                aria-label={contactInfo.socialMedia.facebook.label}
-              >
-                {contactInfo.socialMedia.facebook.icon}
-              </a>
+                  href={contactInfo.socialMedia.facebook.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                  aria-label={contactInfo.socialMedia.facebook.label}
+                >
+                  {contactInfo.socialMedia.facebook.icon}
+                </a>
+                <a
+                  href={contactInfo.socialMedia.linkedin.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={styles.socialLink}
+                  aria-label={contactInfo.socialMedia.linkedin.label}
+                >
+                  {contactInfo.socialMedia.linkedin.icon}
+                </a>
             </div>
           </div>
         </div>
@@ -145,7 +161,10 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className={styles.copyrightSection}>
           <div className={styles.copyrightText}>
-            <p>&copy; {currentYear} {contactInfo.Copyright} {contactInfo.All_rights_reserved}</p>
+            <p>
+              &copy; {currentYear} {contactInfo.Copyright}{" "}
+              {contactInfo.All_rights_reserved}
+            </p>
           </div>
           <div className={styles.legalLinks}>
             <Link to="/privacy" className={styles.legalLink}>

@@ -92,6 +92,15 @@
   border-bottom: 2px solid var(--color-primary-lighter);
 }
 
+.subsectionTitle {
+  font-size: var(--font-size-h4);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text-primary);
+  margin-top: var(--gap-md);
+  margin-bottom: var(--gap-sm);
+  line-height: var(--line-height-tight);
+}
+
 .sectionText {
   font-size: var(--font-size-body);
   color: var(--color-text-secondary);
