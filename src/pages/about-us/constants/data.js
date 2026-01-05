@@ -1,3 +1,10 @@
+import anup from "../../../assets/teams/anup_gupta.jpeg"
+import harshita from "../../../assets/teams/harshita.jpeg"
+import fatima from "../../../assets/teams/fatima.jpeg"
+import preeti from "../../../assets/teams/priti_sahoo.jpeg"
+import harika from "../../../assets/teams/harika.jpeg"
+import ratan from "../../../assets/teams/ratan_shruti.jpeg"
+
 export const stats = [
   { number: "500+", label: "Industries Helped" },
   { number: "98%", label: "Client Satisfaction" },
@@ -9,6 +16,7 @@ export const teamMembers = [
   {
     id: 1,
     name: "Anup Gupta",
+    image: anup,
     designation: "AVP Sales",
     experience: "7+ Years",
     description:
@@ -17,6 +25,7 @@ export const teamMembers = [
   {
     id: 2,
     name: "Harshita",
+    image: harshita,
     designation: "Sales Architect",
     experience: "6+ Years",
     description:
@@ -25,6 +34,7 @@ export const teamMembers = [
   {
     id: 3,
     name: "Fatima",
+    image: fatima,
     designation: "Sales Architect",
     experience: "5+ Years",
     description:
@@ -33,6 +43,7 @@ export const teamMembers = [
   {
     id: 4,
     name: "Preeti Sahoo",
+    image: preeti,
     designation: "Service Lead",
     experience: "8+ Years",
     description:
@@ -41,6 +52,7 @@ export const teamMembers = [
   {
     id: 5,
     name: "Harika",
+    image: harika,
     designation: "AI Design Architect",
     experience: "6+ Years",
     description:
@@ -49,6 +61,7 @@ export const teamMembers = [
   {
     id: 6,
     name: "Ratan Shruti",
+    image: ratan,
     designation: "AI Delivery Lead",
     experience: "7+ Years",
     description:
