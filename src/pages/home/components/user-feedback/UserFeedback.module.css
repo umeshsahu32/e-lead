@@ -1,6 +1,6 @@
 .userFeedback {
   padding: var(--spacing-section-lg) 0;
-  background: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-primary) 50%, var(--color-primary-dark) 100%);
+  background: linear-gradient(180deg, #190e3b 0%, #190e3b 10%, #44116b 100%);
   position: relative;
   overflow: hidden;
 }

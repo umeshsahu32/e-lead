@@ -67,7 +67,7 @@
 }
 
 .title {
-  font-size: var(--font-size-h2);
+  font-size: var(--font-size-h3);
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--gap-xs);
   line-height: var(--line-height-tight);
@@ -75,7 +75,7 @@
 }
 
 .subtitle {
-  font-size: var(--font-size-h5);
+  font-size: var(--font-size-h6);
   line-height: var(--line-height-normal);
   color: rgba(255, 255, 255, 0.95);
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
