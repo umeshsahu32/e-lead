@@ -226,9 +226,10 @@
 .serviceTitle {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-bold);
-  background: var(--gradient-text);
+  /* background: var(--gradient-text);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-text-fill-color: transparent; */
+  color: var(--color-text-primary);
   background-clip: text;
   margin: 0;
   line-height: var(--line-height-tight);

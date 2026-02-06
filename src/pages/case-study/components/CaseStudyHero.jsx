@@ -1,16 +1,20 @@
 import styles from "./CaseStudyHero.module.css";
 import { CASE_STUDY_CONSTANTS } from "../constants";
+import caseStudyVideo from "../../../assets/new-images/case_study.mp4";
 
 const CaseStudyHero = () => {
   const { HERO } = CASE_STUDY_CONSTANTS;
   return (
     <section className={styles.heroSection}>
       <div className={styles.bannerImage}>
-        <img
-          src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=1920&q=80"
-          alt="Case Studies Banner"
-          className={styles.image}
-        />
+      <video
+            src={caseStudyVideo}
+            className={styles.image}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
         <div className={styles.overlay} />
       </div>
 

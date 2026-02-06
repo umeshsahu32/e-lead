@@ -1,14 +1,18 @@
 import styles from './ServicesHero.module.css'
+import servicesVideo from "../../../assets/new-images/services.mp4";
 
 const ServicesHero = () => {
   return (
     <section className={styles.heroSection}>
       <div className={styles.bannerImage}>
-        <img 
-          src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80" 
-          alt="Services Banner" 
-          className={styles.image}
-        />
+      <video
+            src={servicesVideo}
+            className={styles.image}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
         <div className={styles.overlay} />
       </div>
       

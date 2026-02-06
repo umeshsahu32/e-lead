@@ -2,16 +2,20 @@ import { Link } from "react-router-dom";
 import styles from "./Packages.module.css";
 import { PACKAGES_CONSTANTS } from "./constants";
 import { packages } from "./constants/data";
+import packagesVideo from "../../assets/new-images/packages.mp4";
 
 const Packages = () => {
   return (
     <div className={styles.packagesPage}>
       <section className={styles.heroSection}>
         <div className={styles.bannerImage}>
-          <img
-            src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=1920&q=80"
-            alt="Packages Banner"
+          <video
+            src={packagesVideo}
             className={styles.image}
+            autoPlay
+            muted
+            loop
+            playsInline
           />
           <div className={styles.overlay} />
         </div>

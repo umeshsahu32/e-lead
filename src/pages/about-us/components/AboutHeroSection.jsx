@@ -1,16 +1,20 @@
 import styles from './AboutHeroSection.module.css'
 import { ABOUT_US_CONSTANTS } from "../constants";
+import aboutUsVideo from "../../../assets/new-images/about_us_1.mp4";
 
 const AboutHeroSection = () => {
   const { HERO } = ABOUT_US_CONSTANTS;
   return (
     <section className={styles.heroSection}>
       <div className={styles.bannerImage}>
-        <img 
-          src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1920&q=80" 
-          alt="About elead Banner" 
-          className={styles.image}
-        />
+      <video
+            src={aboutUsVideo}
+            className={styles.image}
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
         <div className={styles.overlay} />
       </div>
       

@@ -1,8 +1,15 @@
+import eBotImage from "../../../assets/new-images/e-bot.jpeg";
+import eProImage from "../../../assets/new-images/e-pro.jpeg";
+import eMeetImage from "../../../assets/new-images/e-meet.jpeg";
+
+import servicesImage1 from "../../../assets/new-images/services-1.jpeg";
+import servicesImage2 from "../../../assets/new-images/services-2.jpeg";
+import servicesImage3 from "../../../assets/new-images/services-3.jpeg";
+
 export const services = [
   {
     title: "E-Bot",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80",
+    image: eBotImage,
     points: [
       "Individually trained",
       "Product-aware",
@@ -13,8 +20,7 @@ export const services = [
   },
   {
     title: "E-Pro",
-    image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+    image: eProImage,
     points: [
       "Bot verified Lead",
       "Purchase Intent Analysis",
@@ -25,8 +31,7 @@ export const services = [
   },
   {
     title: "E-Meet",
-    image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80",
+    image: eMeetImage,
     points: [
       "Bot verified Meeting",
       "Purchase Intent Analysis",
@@ -88,7 +93,7 @@ export const services_2 = [
       "Creates evidence for every lead",
     ],
     image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&q=80",
+      servicesImage1,
   },
   {
     id: 2,
@@ -109,7 +114,7 @@ export const services_2 = [
     ],
     note: "Everything is updated in real time.",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&q=80",
+      servicesImage2,
   },
   {
     id: 3,
@@ -134,7 +139,7 @@ export const services_2 = [
       "Relevant buyer signals",
     ],
     image:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&q=80",
+      servicesImage3,
   },
 ];
 
