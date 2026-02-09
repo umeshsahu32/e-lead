@@ -2,7 +2,7 @@ export const packages = [
   {
     id: 1,
     name: "QBASIC (S1) — Quick Fit Qualification",
-    price: "₹3,999",
+    price: "₹9,999",
     period: "one-time",
     description:
       "Perfect if you want to stop wasting time on unqualified enquiries.",
@@ -41,7 +41,7 @@ export const packages = [
   {
     id: 2,
     name: "QSTART (S2) — Structured Discovery & Intent Validation",
-    price: "₹7,999",
+    price: "₹12,999",
     period: "one-time",
     description: "deal for teams that want fewer calls and better conversions.",
     recommended: true,
@@ -73,7 +73,7 @@ export const packages = [
   {
     id: 3,
     name: "QCORP (S3) — Deep Profiling for High-Value Sales",
-    price: "₹9,999",
+    price: "₹19,999",
     period: "one-time",
     description:
       "Built for businesses where every lead has serious revenue potential.",
