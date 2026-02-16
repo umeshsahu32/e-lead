@@ -1,4 +1,4 @@
-import anup from "../../../assets/teams/anup_gupta.jpeg"
+import arun from "../../../assets/teams/arun_sai.jpeg"
 import harshita from "../../../assets/teams/harshita.jpeg"
 import fatima from "../../../assets/teams/fatima.jpeg"
 import preeti from "../../../assets/teams/priti_sahoo.jpeg"
@@ -16,11 +16,11 @@ export const teamMembers = [
   {
     id: 1,
     name: "Arun Sai",
-    image: anup,
+    image: arun,
     designation: "AVP Sales",
     experience: "7+ Years",
     description:
-      "Arun Sai brings over 7 years of experience in sales leadership and AI-driven lead generation. He has led multiple high-performance sales teams across B2B and B2C segments with a strong focus on conversion quality. At eLead, Arun Sai drives revenue strategy, sales alignment, and enterprise client success. His expertise lies in translating verified intent into predictable sales outcomes. He is deeply involved in aligning AI qualification with real-world sales execution.",
+      "Arun brings over 7 years of experience in sales leadership and AI-driven lead generation. He has led multiple high-performance sales teams across B2B and B2C segments with a strong focus on conversion quality. At eLead, Arun drives revenue strategy, sales alignment, and enterprise client success. His expertise lies in translating verified intent into predictable sales outcomes. He is deeply involved in aligning AI qualification with real-world sales execution.",
   },
   {
     id: 2,
