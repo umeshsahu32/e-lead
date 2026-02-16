@@ -43,7 +43,7 @@ export const packages = [
     name: "QSTART (S2) — Structured Discovery & Intent Validation",
     price: "₹12,999",
     period: "one-time",
-    description: "deal for teams that want fewer calls and better conversions.",
+    description: "Deal for teams that want fewer calls and better conversions.",
     recommended: true,
     features: [
       { text: "Everything in QBASIC, plus:", included: true },

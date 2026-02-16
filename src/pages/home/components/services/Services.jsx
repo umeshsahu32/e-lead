@@ -82,15 +82,15 @@ const Services = () => {
                         isExpanded ? styles.show : ""
                       }`}
                     >
-                      {/* eBot Service - What it is and Why it matters */}
+                      {/* Qbot Service - What it is and Why it matters */}
                       {service.whyItMatters && (
                         <>
                           <div className={styles.whatItIsSection}>
-                            {/* Trained on list (for eBot) */}
+                            {/* Trained on list (for Qbot) */}
                             {service.whatItIs.trainedOn && (
                               <div className={styles.trainedOnSection}>
                                 <p className={styles.trainedOnLabel}>
-                                  eBot is trained on:
+                                  Qbot is trained on:
                                 </p>
                                 <ul className={styles.trainedOnList}>
                                   {service.whatItIs.trainedOn.map(
@@ -108,7 +108,7 @@ const Services = () => {
                               </div>
                             )}
 
-                            {/* Principles (for eBot) */}
+                            {/* Principles (for Qbot) */}
                             {service.whatItIs.principles && (
                               <div className={styles.principlesSection}>
                                 {service.whatItIs.principles.map(
@@ -122,7 +122,7 @@ const Services = () => {
                             )}
                           </div>
 
-                          {/* Why it matters section (for eBot) */}
+                          {/* Why it matters section (for Qbot) */}
                           <div className={styles.whyItMattersSection}>
                             <h4 className={styles.sectionTitle}>
                               Why it matters
@@ -147,7 +147,7 @@ const Services = () => {
                         <div className={styles.dashboardSection}>
                           
                           <h4 className={styles.sectionTitle}>
-                            What You See Inside Your elead Dashboard
+                            What You See Inside Your eLead Dashboard
                           </h4>
                           <p className={styles.sectionDescription}>
                             Your dashboard includes key campaign metrics, such

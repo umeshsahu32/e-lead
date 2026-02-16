@@ -1,10 +1,10 @@
 export const HOME_CONSTANTS = {
   HERO: {
     TITLE_1: "Verified Leads, ",
-    TITLE_2: "Not Guesswork.",
+    TITLE_2: "No Guesswork.",
 
     DESCRIPTION:
-      "Every lead on e-lead is engaged, evaluated, and verified by eBot before it reaches your sales team.",
+      "Every lead on eLead is engaged, evaluated, and verified by Qbot before it reaches your sales team.",
     CTA: "Get Started Today",
   },
   WHY_LEADS_FAIL: {
@@ -22,12 +22,12 @@ export const HOME_CONSTANTS = {
       "Disputes increase.",
       "Conversions drop.",
     ],
-    SOLUTION: "e-lead fixes this at the source.",
+    SOLUTION: "eLead fixes this at the source.",
   },
   WHAT_WE_DO: {
     TITLE: "What We Do",
     DESCRIPTION:
-      "We provide comprehensive digital solutions to help your business succeed in the digital world. E-Bot™ is a dedicated, client-specific AI qualification bot deployed for every customer on e-lead.shop.",
+      "We provide comprehensive digital solutions to help your business succeed in the digital world. Qbot is a dedicated, client-specific AI qualification bot deployed for every customer on eLead.",
   },
   SERVICES: {
     SERVICE_TITLE: "Services",

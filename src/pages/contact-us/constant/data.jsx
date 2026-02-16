@@ -14,9 +14,9 @@ export const contactMethods = [
       </svg>
     ),
     title: "Phone",
-    content: "+91 91547 65825",
+    content: "+91 73306 36644",
     subtitle: "Mon-Fri 9am-6pm",
-    link: "tel:+919154765825",
+    link: "tel:+917330636644",
   },
   {
     id: 2,

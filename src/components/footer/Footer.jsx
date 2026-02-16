@@ -27,7 +27,7 @@ const Footer = () => {
       icon: <FaMapMarkerAlt />,
     },
     phoneNumber: {
-      label: "+91 91547 65825",
+      label: "+91 73306 36644",
       icon: <FaPhone />,
     },
     emailAddress: {
