@@ -1,4 +1,4 @@
-import arun from "../../../assets/teams/arun_sai.jpeg"
+import arun from "../../../assets/teams/Arun_Sai.jpeg"
 import harshita from "../../../assets/teams/harshita.jpeg"
 import fatima from "../../../assets/teams/fatima.jpeg"
 import preeti from "../../../assets/teams/priti_sahoo.jpeg"
