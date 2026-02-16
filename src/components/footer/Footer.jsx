@@ -23,7 +23,7 @@ const Footer = () => {
   const contactInfo = {
     address: {
       label:
-        "First Floor, Flat No 101, RR Heights, East Srinivas Nagar, Ameerpet, Hyderabad, Telangana – 500038",
+        "Leadsync Technologies,\nFirst Floor, Flat No 101, RR Heights, East Srinivas Nagar, Ameerpet, Hyderabad, Telangana – 500038",
       icon: <FaMapMarkerAlt />,
     },
     phoneNumber: {
@@ -96,7 +96,7 @@ const Footer = () => {
                 <div className={styles.contactIcon}>
                   {contactInfo.address.icon}
                 </div>
-                <span>{contactInfo.address.label}</span>
+                <span className={styles.addressLabel}>{contactInfo.address.label}</span>
               </div>
               <div className={styles.contactItem}>
                 <div className={styles.contactIcon}>

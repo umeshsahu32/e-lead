@@ -147,6 +147,10 @@
   flex-shrink: 0;
 }
 
+.addressLabel {
+  white-space: pre-line;
+}
+
 .contactLink {
   color: var(--color-text-on-dark-tertiary);
   text-decoration: none;
