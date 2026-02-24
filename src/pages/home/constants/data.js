@@ -191,7 +191,7 @@ export const successStories = [
 ];
 
 export const stats = [
-  { number: "500+", label: "Industries Helped" },
+  { number: "55+", label: "Industries Helped" },
   { number: "98%", label: "Client Satisfaction" },
   { number: "10+", label: "Years Experience" },
   { number: "1000+", label: "Projects Completed" },

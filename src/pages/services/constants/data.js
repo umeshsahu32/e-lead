@@ -41,7 +41,7 @@ export const services = [
     dashboardFeatures: {
       title: 'What You See Inside Your eLead Dashboard',
       qualified: {
-        title: '✔ Qualified eLeads',
+        title: '✔ Qualified Leads',
         points: [
           'All verified leads delivered to your account',
           'Full conversation transcripts',

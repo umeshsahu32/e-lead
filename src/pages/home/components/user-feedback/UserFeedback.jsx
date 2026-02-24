@@ -115,6 +115,9 @@ const UserFeedback = () => {
                       <div className={styles.authorRole}>
                         {testimonial.role}
                       </div>
+                      <div className={styles.authorRole}>
+                        {testimonial.company}
+                      </div>
                     </div>
                   </div>
                 </div>
