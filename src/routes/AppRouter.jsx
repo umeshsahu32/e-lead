@@ -9,6 +9,7 @@ import {
   Privacy,
   Services,
   Terms,
+  Refund,
   NotFound,
 } from "./routes.js";
 
@@ -26,6 +27,7 @@ const AppRouter = createBrowserRouter([
       { path: "privacy", element: <Privacy /> },
       { path: "services", element: <Services /> },
       { path: "terms", element: <Terms /> },
+      { path: "refund-and-cancellation-policy", element: <Refund /> },
       { path: "*", element: <NotFound /> },
     ],
   },

@@ -27,7 +27,7 @@ const Footer = () => {
       icon: <FaMapMarkerAlt />,
     },
     phoneNumber: {
-      label: "+91 73306 36644",
+      label: "+91 90634 28646",
       icon: <FaPhone />,
     },
     emailAddress: {
@@ -60,6 +60,7 @@ const Footer = () => {
     Terms_and_conditions: "Terms and Conditions",
     Copyright: "Copyright",
     All_rights_reserved: "All rights reserved.",
+    Refund_and_cancellation: "Refund and Cancellation",
   };
 
   const currentYear = new Date().getFullYear();
@@ -137,23 +138,23 @@ const Footer = () => {
                 {contactInfo.socialMedia.instagram.icon}
               </a>
               <a
-                  href={contactInfo.socialMedia.facebook.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.socialLink}
-                  aria-label={contactInfo.socialMedia.facebook.label}
-                >
-                  {contactInfo.socialMedia.facebook.icon}
-                </a>
-                <a
-                  href={contactInfo.socialMedia.linkedin.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.socialLink}
-                  aria-label={contactInfo.socialMedia.linkedin.label}
-                >
-                  {contactInfo.socialMedia.linkedin.icon}
-                </a>
+                href={contactInfo.socialMedia.facebook.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialLink}
+                aria-label={contactInfo.socialMedia.facebook.label}
+              >
+                {contactInfo.socialMedia.facebook.icon}
+              </a>
+              <a
+                href={contactInfo.socialMedia.linkedin.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.socialLink}
+                aria-label={contactInfo.socialMedia.linkedin.label}
+              >
+                {contactInfo.socialMedia.linkedin.icon}
+              </a>
             </div>
           </div>
         </div>
@@ -173,6 +174,10 @@ const Footer = () => {
             <span className={styles.separator}>|</span>
             <Link to="/terms" className={styles.legalLink}>
               {contactInfo.Terms_and_conditions}
+            </Link>
+            <span className={styles.separator}>|</span>
+            <Link to="/refund-and-cancellation-policy" className={styles.legalLink}>
+              {contactInfo.Refund_and_cancellation}
             </Link>
           </div>
         </div>
